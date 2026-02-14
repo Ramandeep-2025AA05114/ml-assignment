@@ -59,6 +59,8 @@ The Streamlit application loads these pre-trained models and performs prediction
 
 * **Live App Link:** https://mobile-price-classifier-raman.streamlit.app/
 
+* **Git Hub Link:** https://github.com/Ramandeep-2025AA05114/ml-assignment
+
 ## 6. Project Structure
 
 The project directory is organized as follows:
