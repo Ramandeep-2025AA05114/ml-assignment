@@ -21,7 +21,6 @@ The objective of this project is to build and evaluate multiple machine learning
 The dataset contains only numerical features and is perfectly balanced, making it suitable for evaluating different classification algorithms.
 Within `train.csv`, an additional internal train–validation split was performed inside the Jupyter notebooks to evaluate model performance and compute the reported metrics.
 
-
 ## 3. Models Used and Evaluation Metrics
 The following machine learning models were implemented using the same dataset and train-test split:
 1. Logistic Regression
@@ -61,9 +60,31 @@ The Streamlit application loads these pre-trained models and performs prediction
 * **Live App Link:** [PASTE YOUR STREAMLIT SHARE LINK HERE]
 
 ## 6. Project Structure
-* **`app.py`**: The main Streamlit application file that loads saved models.
-* **`model/`**: Folder containing the pre-trained `.pkl` model files and `scaler.pkl`.
-* **`train.csv`**: The dataset used to train the models (1700 rows).
-* **`test.csv`**: The unseen dataset used for testing the deployed app (300 rows).
-* **`requirements.txt`**: List of Python dependencies.
-* **`*.ipynb`**: Jupyter Notebooks containing the code for training and evaluating each model.
+
+The project directory is organized as follows:
+
+```text
+ml-assignment-2/
+├── app.py                 # Main Streamlit application
+├── train.csv              # Training dataset (85%)
+├── test.csv               # Testing dataset (15%)
+├── requirements.txt       # Python dependencies
+├── README.md              # Project documentation
+├── .gitignore             # Git ignore file
+│
+├── model/                 # Serialized models and scaler
+│   ├── logistic.pkl
+│   ├── decision_tree.pkl
+│   ├── knn.pkl
+│   ├── naive_bayes.pkl
+│   ├── random_forest.pkl
+│   ├── xgboost.pkl
+│   └── scaler.pkl
+│
+└── notebook/              # Jupyter notebooks for training
+    ├── logistic_regression.ipynb
+    ├── decision_tree.ipynb
+    ├── knn.ipynb
+    ├── naive_bayes.ipynb
+    ├── random_forest.ipynb
+    └── xgboost.ipynb
