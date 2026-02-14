@@ -57,7 +57,7 @@ The interactive web application is deployed on Streamlit Community Cloud.
 To comply with Streamlit Community Cloud resource constraints, all machine learning models are trained offline using `train.csv` and saved as pre-trained `.pkl` files.  
 The Streamlit application loads these pre-trained models and performs prediction and evaluation **only** on the uploaded `test.csv`.
 
-* **Live App Link:** [PASTE YOUR STREAMLIT SHARE LINK HERE]
+* **Live App Link:** https://mobile-price-classifier-raman.streamlit.app/
 
 ## 6. Project Structure
 
